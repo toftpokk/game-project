@@ -18,6 +18,7 @@ class Game():
 
         # Entities
         self.entities = EntityManager(self.assets)
+        self.entities.makeCreature("player")
 
         # Tiles
         self.tiles = TileManager(self.entities)
