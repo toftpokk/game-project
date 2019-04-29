@@ -1,4 +1,4 @@
 # Game-Project
-A game rpg project
+A game rpg project for everyone
 
 
