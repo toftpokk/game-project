@@ -1,3 +1,3 @@
 # game-project
 
-hello boy
+hello boys
