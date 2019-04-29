@@ -3,7 +3,7 @@
 > ### *The Orafus Brothers*
 ----------------------------
 
- Whenever I watch the skies settle, the days and nights passed by. A breeze sweeps over the blooming tulips, the trees swing and the birds glide across the sky as the night crawl over the horizon. My hopes diminished when they took over this place. The city was once full of faith and confidence. It was rich, and plentiful of resources and the townsfolks were energetic and full of joy back then. 
+ Whenever I watch the skies settle, the days and nights passed by. A breeze sweeps over the blooming tulips, the trees swing and the birds glide across the sky as the night crawls over the horizon. My hopes diminished when they took over this place. The city was once full of faith and confidence. It was rich, and plenty of resources and the townsfolks were energetic and full of joy back then. 
 
 It all started many years ago, when our city was ambushed by an unknown military force. They seperated our families, they occupied our land, they stole our treasures, They tortured us to our weakest corner, until we can't resist their powerful new nation, they call themselves, **The Greed**.
 
