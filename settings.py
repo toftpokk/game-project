@@ -1,0 +1,3 @@
+# Constants
+SCREEN_SIZE = WIDTH, HEIGHT = 500,500
+TILE_SIZE = 64
