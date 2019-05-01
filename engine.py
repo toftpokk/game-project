@@ -23,6 +23,7 @@ class Game():
         # Tiles
         self.tiles = TileManager(self.entities)
         self.tiles.makeTile("grass")
+        self.tiles.loadMap("")
 
         # Start Game
         self.in_game = True

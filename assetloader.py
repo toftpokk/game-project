@@ -13,6 +13,7 @@ class AssetManager():
         self.texture_dict = {}
         # Array of Dictionaries
         self.dict_array = [playerTextures,tiles]
+        self.map = []
 
     def loadTexture(self,name,path):
         self.texture_dict[name] = pygame.image.load(path)
@@ -24,3 +25,6 @@ class AssetManager():
     def loadAll(self):
         for d in self.dict_array:
             self.loadDict(d)
+
+    def loadMap(self):
+        
