@@ -7,12 +7,14 @@ class EntityManager():
         self.AssetManager = assetman
         self.groups = {
             'general':{},
+            'player':{},
+            'enemy':{},
             'tile': {}
             }
 
     # Entity Creation
     def getTexture(self,name):
-        return self.AssetManager.texture_dict[name]
+        return self.AssetManager.texture_dict.get(name,self.AssetManager.texture_dict['notexture'])
     
     def manageEntity(self, name, group,e):
         self.entities[name] = e
@@ -41,19 +43,23 @@ class EntityManager():
         self.entities[name]
     
     def blitEntity(self, screen, name=None, entity=None):
+        # input only entity
         if not name:
             name = entity.name
             texturename = entity.texturename
+        # input only name
         if not texturename:
             texturename = name
-        screen.blit(self.entities[name].texture, self.entities[name].rect)
+        if not self.entities[name].texture == None:
+            screen.blit(self.entities[name].texture, self.entities[name].rect)
     
     def blitGroups(self, group, screen):
         for e in self.groups[group].values():
             self.blitEntity(screen, entity=e)
     
     def makeCreature(self, name, pos = [0,0], size = [0,0], group='general', hasTexture = False, texturename = None):
-        self.makeEntity(name,pos=pos,size=size,group=group,hasTexture=hasTexture,texturename=texturename)
+        e = self.makeEntity(name,pos=pos,size=size,group=group,hasTexture=hasTexture,texturename=texturename)
+        return e
 
     
 # Entity
