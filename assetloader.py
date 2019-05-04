@@ -27,8 +27,7 @@ class AssetManager():
                         MAPS[csv].append(int(char))
                 h+=1
             MAP_METAS[csv].append(int(w))
-            MAP_METAS[csv].append(int(h))
-        print(MAPS)          
+            MAP_METAS[csv].append(int(h))        
 
     def loadTexture(self,name,path):
         self.texture_dict[name] = pygame.image.load(path)
