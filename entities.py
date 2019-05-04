@@ -3,7 +3,7 @@ import pygame
 # Entity Manager
 class EntityManager():
     def __init__(self, assetman):
-        self.entities = {}
+        self.entities = {} # Name -> Entity
         self.AssetManager = assetman
         self.groups = {
             'general':{},
@@ -50,7 +50,7 @@ class EntityManager():
         if not texturename:
             texturename = name
         if not self.entities[name].texture == None:
-            screen.blit(self.entities[name].texture, self.entities[name].rect)
+            screen.blit(self.entities[name].texture, self.entities[name].render_rect)
     
     def blitGroups(self, group, screen):
         for e in self.groups[group].values():
@@ -81,6 +81,7 @@ class Entity():
         # pos in pixels
         self.name = name
         self.rect = pygame.Rect(pos[0], pos[1], size[0], size[1])
+        self.render_rect = pygame.Rect(pos[0], pos[1], size[0], size[1])
         self.texturename = texturename
         self.texture = texture
         self.group = group
